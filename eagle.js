@@ -2,8 +2,8 @@ module.exports = function(hljs) {
   var GO_KEYWORDS = {
     keyword:
       'break default func interface case struct else switch ' +
-      'fallthrough if continue for import export return var defer ' +
-      'class __inc __dec sizeof new extern gen',
+      'fallthrough if elif continue for import export return var defer ' +
+      'class __inc __dec sizeof new extern gen puts',
     type:
       'bool byte short int long ubyte ushort ulong uint float double any',
     literal:

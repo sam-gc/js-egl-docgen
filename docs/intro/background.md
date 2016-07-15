@@ -24,3 +24,7 @@ honors work at Macalester College. The full (technical) paper documenting the
 language and the compiler is under review and should be published sometime in
 the foreseeable future.
 
+The Eagle compiler uses the [*LLVM* backend](http://llvm.org) and is primarily
+written in C. Parsing is done using *GNU Flex* and *Bison*. The whole system
+is highly dependent on the UNIX build system.
+
