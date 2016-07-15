@@ -47,16 +47,23 @@ function generate(layout, output) {
 
     prepare(output);
     var chap = '';
+    var chapRender = '';
 
     index.forEach(function(item, i) {
         if(item.cname != '') {
             chap = item.cname;
+            chapRender = item.name;
         }
 
         var fname = path.join(layout.dir, chap, item.md);
         var oname = path.join(output, item.path);
         var gen = marked(fs.readFileSync(fname, 'utf8'));
-        ejs.renderFile('html/template.ejs', {render: gen, index: index, si: i}, null, function(err, str) {
+        ejs.renderFile('html/template.ejs', {
+            render: gen,
+            index: index,
+            si: i,
+            chapter: chapRender
+        }, null, function(err, str) {
             if(err)
                 die(err);
             fs.writeFile(oname, str);

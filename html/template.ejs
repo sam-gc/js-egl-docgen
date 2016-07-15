@@ -8,28 +8,30 @@
 <body>
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--fixed-header">
-<!--
-  <header class="mdl-layout__header">
+  <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600 is-casting-shadow">
     <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title"><b><%=chapter%></b></span>
       <div class="mdl-layout-spacer"></div>
+      <span class="mdl-layout-title">The Eagle Programming Language</span>
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
                   mdl-textfield--floating-label mdl-textfield--align-right">
+<!--
         <label class="mdl-button mdl-js-button mdl-button--icon"
                for="fixed-header-drawer-exp">
           <i class="material-icons">search</i>
         </label>
-        <div class="mdl-textfield__expandable-holder">
+-->
+        <div class="mdl-color--grey-600 mdl-textfield__expandable-holder">
           <input class="mdl-textfield__input" type="text" name="sample"
                  id="fixed-header-drawer-exp">
         </div>
       </div>
     </div>
   </header>
--->
   <div class="mdl-layout__drawer">
     <nav class="mdl-navigation">
 <% index.forEach(function(idx, i) { %>
-      <a class="mdl-navigation__link<%= i == si ? ' highlighted-menu' : '' %>" href="<%=idx.path%>"><% if(idx.cname == '') {%>&nbsp;&nbsp;&nbsp;&nbsp;<%}%><b><%=idx.sec%></b> <%=idx.name%></a>
+      <a class="mdl-navigation__link<%= i == si ? ' mdl-color--primary mdl-color-text--grey-100' : '' %>" href="<%=idx.path%>"><% if(idx.cname == '') {%>&nbsp;&nbsp;&nbsp;&nbsp;<%}%><b><%=idx.sec%></b> <%=idx.name%></a>
 <% }); %>
     </nav>
   </div>
@@ -147,6 +149,15 @@
 
 .highlighted-menu {
   background: #E4E4E4
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: inherit;
+}
+
+pre {
+    border-left: 1px solid #e4e4e4;
+    padding-left: 30px;
 }
 </style>
 </html>
