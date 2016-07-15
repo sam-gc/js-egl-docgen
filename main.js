@@ -19,7 +19,7 @@ String.prototype.titlize = function(delim) {
 
     newParts.push(parts[0].firstToUpper());
     parts.splice(1).forEach(function(p) {
-        newParts.push(exemptions.includes(p) ?
+        newParts.push(exemptions.indexOf(p) >= 0 ?
                 p : p.firstToUpper()
         );
     });
