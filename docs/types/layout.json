@@ -2,5 +2,6 @@
     "primitives.md",
     "structures.md",
     "classes.md",
-    "interfaces.md"
+    "interfaces.md",
+    "typedefs.md"
 ]

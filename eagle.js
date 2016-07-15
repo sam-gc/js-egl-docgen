@@ -3,12 +3,11 @@ module.exports = function(hljs) {
     keyword:
       'break default func interface case struct else switch ' +
       'fallthrough if elif continue for import export return var defer ' +
-      'class __inc __dec sizeof new extern gen puts',
-    type:
+      'class __inc __dec sizeof new extern gen puts typedef ' +
       'bool byte short int long ubyte ushort ulong uint float double any',
     literal:
        'yes no nil',
-    built_in:
+    symbol:
       'self init destruct'
   };
   return {
