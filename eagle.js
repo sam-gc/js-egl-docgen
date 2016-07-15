@@ -3,8 +3,9 @@ module.exports = function(hljs) {
     keyword:
       'break default func interface case struct else switch ' +
       'fallthrough if continue for import export return var defer ' +
-      'bool byte short int long ubyte ushort ulong uint float double ' +
-      'class __inc __dec sizeof new',
+      'class __inc __dec sizeof new extern gen',
+    type:
+      'bool byte short int long ubyte ushort ulong uint float double any',
     literal:
        'yes no nil',
     built_in:
