@@ -8,7 +8,7 @@ module.exports = function(hljs) {
     literal:
        'yes no nil',
     symbol:
-      'self init destruct'
+      'self init destruct recur'
   };
   return {
     aliases: ['eagle'],
