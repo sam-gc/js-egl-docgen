@@ -4,7 +4,8 @@ module.exports = function(hljs) {
       'break default func interface case struct else switch ' +
       'fallthrough if elif continue for import export return var defer ' +
       'class __inc __dec sizeof new extern gen puts typedef ' +
-      'bool byte short int long ubyte ushort ulong uint float double any',
+      'bool byte short int long ubyte ushort ulong uint float double any ' +
+      'yield in',
     literal:
        'yes no nil',
     symbol:
